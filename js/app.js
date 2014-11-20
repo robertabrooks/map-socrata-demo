@@ -45,6 +45,7 @@ $(document).ready(function() {
 
                 google.maps.event.addListener(marker, 'click', function() {
                     var html = '<h2>' + station.station_name + '</h2>';
+                    html += '<p>' + station.street_address + '</p>';
 
                     infoWindow.setContent(html);
                     infoWindow.open(map, this);
